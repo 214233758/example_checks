@@ -5,6 +5,6 @@ check50:
         stdout: Hello, world!
         exit: 0
     hello world:
-      - run: clang hello.c
+      - run: ./hello
         stdout: Hello, World!
         exit: 0  
