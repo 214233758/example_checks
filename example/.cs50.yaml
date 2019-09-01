@@ -4,3 +4,7 @@ check50:
       - run: python3 hello.py
         stdout: Hello, world!
         exit: 0
+    hello world:
+      - run: clang hello.c
+        stdout: Hello, World!
+        exit: 0  
