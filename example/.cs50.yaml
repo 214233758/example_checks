@@ -1,6 +1,6 @@
 check50:
   checks:
     hello world:
-      - run: clang hello.c -o hello
+      - run: clang hello.c  -lcrypt -lcs50 -lm -o hello
         stdout: Hello, World!
         exit: 0
