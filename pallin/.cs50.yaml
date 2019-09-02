@@ -8,9 +8,9 @@ check50:
          -12321
          -45656
          -10010
-        stdout:
-          -1111 is a palindrome.
-          -12321 is a palindrome.
-          -45656 is not a palindrome.
-          -10010 is not a palindrome.
-         exit:0
+       stdout:
+         -1111 is a palindrome.
+         -12321 is a palindrome.
+         -45656 is not a palindrome.
+         -10010 is not a palindrome.
+       exit:0
