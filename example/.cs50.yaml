@@ -3,5 +3,5 @@ check50:
     hello C:
       - run: clang hello.c  -lcrypt -lcs50 -lm -o hello
       - run: ./hello
-        stdout: This is a C program
+        stdout: This is a C
         exit: 0
