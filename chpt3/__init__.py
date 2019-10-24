@@ -9,9 +9,9 @@ def exists():
 @check50.check(exists)
 def compiles():
     """question3.c compiles"""
-    check50.c.compile(question3.c)
+    check50.c.compile("question3.c")
     
 @check50.check(compiles)
 def test1():
-    """expected output"""
+    """First condition is true\nSecond condition is false\nThird condition is true"""
     check50.run("./question3").stdout("First condition is true\nSecond condition is false\nThird condition is true", regex=True).exit(0)
