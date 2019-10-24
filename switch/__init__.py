@@ -1,10 +1,10 @@
 import check50
 import check50.c
 
-@check50.check
+@check50.check()
 def exists():
     """switch.c exists"""
-    check50.exists("switch")
+    check50.exists("switch.c")
     
 @check50.check(exists)
 def compiles():
