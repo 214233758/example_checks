@@ -14,4 +14,4 @@ def compiles()
 @check50.check(compiles)
 def test()
     """expected output"""
-    check50.run("./question3").stdou("First condition is true\nSecond condition is false\nThird condition is true", regex=True).exit(0)
+    check50.run("./question3").stdout("First condition is true\nSecond condition is false\nThird condition is true", regex=True).exit(0)
