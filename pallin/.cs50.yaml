@@ -1,8 +1,14 @@
 check50:
   checks:
-    hello world:
+    1111 is a pallindrome:
       - run: g++ pallindrome.cpp -lcrypt -lcs50 -lm -o pallindrome
       - run: ./pallindrome
         stdin: 1111
         stdout: 1111 is a pallindrome
+        exit: 0
+    12321 is a pallindrome:
+      - run: g++ pallindrome.cpp -lcrypt -lcs50 -lm -o pallindrome
+      - run: ./pallindrome
+        stdin: 1111
+        stdout: 12321 is a pallindrome
         exit: 0
