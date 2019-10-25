@@ -1,6 +1,6 @@
 check50:
   checks:
-    hello, world:
+    hello world:
       - run: g++ hello.cpp -lcrypt -lcs50 -lm -o hello
       - run: ./hello
         stdout: Hello, world!
