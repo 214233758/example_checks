@@ -9,7 +9,7 @@ def exists():
 @check50.check(exists)
 def compiles():
     """pallindrome.cpp compiles"""
-    check50.c.compile("pallindrome.cpp", lcs50=True)
+    check50.cpp.compile("pallindrome.cpp", lcs50=True)
 
 @check50.check(compiles)
 def test1():
