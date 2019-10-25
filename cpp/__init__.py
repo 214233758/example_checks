@@ -3,7 +3,7 @@ import check50.c
 
 @check50.check()
 def exists():
-    """pallindrome.c exists"""
+    """pallindrome.cpp exists"""
     check50.exists("pallindrome.cpp")
 
 @check50.check(exists)
