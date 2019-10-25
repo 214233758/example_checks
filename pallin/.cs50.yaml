@@ -9,6 +9,18 @@ check50:
     12321 is a pallindrome:
       - run: g++ pallindrome.cpp -lcrypt -lcs50 -lm -o pallindrome
       - run: ./pallindrome
-        stdin: 1111
+        stdin: 12321
         stdout: 12321 is a pallindrome
+        exit: 0
+    1010 is not a pallindrome:
+      - run: g++ pallindrome.cpp -lcrypt -lcs50 -lm -o pallindrome
+      - run: ./pallindrome
+        stdin: 1010
+        stdout: 1010 is not a pallindrome
+        exit: 0
+    120012 is a pallindrome:
+      - run: g++ pallindrome.cpp -lcrypt -lcs50 -lm -o pallindrome
+      - run: ./pallindrome
+        stdin: 120012
+        stdout: 120012 is not a pallindrome
         exit: 0
