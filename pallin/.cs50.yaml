@@ -1,7 +1,7 @@
 check50: 
   files: &check50_files
     - !exclude "*"
-    - !require pallindrome.c
+    - !require pallindrome.cpp
 
 submit50:
   files: *check50_files
