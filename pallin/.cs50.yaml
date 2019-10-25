@@ -1,9 +1,8 @@
 check50:
   checks:
-    pallindrom:
-      -run: clang palli.c  -lcrypt -lcs50 -lm -o palli
-      -run: ./palli
-       stdin:
-         -1111
-       stdout:
-         -1111 is a palindrome.
+    hello world:
+      - run: g++ pallindrome.cpp -lcrypt -lcs50 -lm -o pallindrome
+      - run: ./pallindrome
+        stdin: 1111
+        stdout: 1111 is a pallindrome
+        exit: 0
