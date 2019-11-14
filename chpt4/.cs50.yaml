@@ -1,7 +1,7 @@
 check50: 
   files: &check50_files
     - !exclude "*"
-    - !require question3.c
+    - !require switch2.c
 
 submit50:
   files: *check50_files
