@@ -1,0 +1,37 @@
+import check50
+import check50.c
+
+@check50.check()
+def exists():
+    """switch2.c exists"""
+    check50.exists("switch2.c")
+    
+@check50.check(exists)
+def compiles():
+    """switch2.c compiles"""
+    check50.c.compile("switch2.c")
+
+@check50.check(compiles)
+def test1():
+    """2 There are 31 days before the given month"""
+    check50.run("./switch2").stdin("2").stdout("There are 31 days before the given month").exit(0)
+
+@check50.check(compiles)
+def test2():
+    """1 There are 0 days before the given month"""
+    check50.run("./switch2").stdin("1").stdout("There are 0 days before the given month").exit(0)
+    
+@check50.check(compiles)
+def test3():
+    """4 There are 91 days before the given month"""
+    check50.run("./switch2").stdin("4").stdout("There are 31 days before the given month").exit(0)
+    
+@check50.check(compiles)
+def test4():
+    """12 There are 335 days before the given month"""
+    check50.run("./switch2").stdin("-1").stdout("There are 335 days before the given month).exit(0)
+    
+@check50.check(compiles)
+def test5():
+    """13 outputs Error: no such month in my calendar"""
+    check50.run("./switch2").stdin("13").stdout("Error: no such month in my calendar").exit(0)
