@@ -38,4 +38,3 @@ submit50:
         stdin: -1
         stdout: Error no such month in my calendar
         exit: 0
-        
