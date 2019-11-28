@@ -30,5 +30,5 @@ check50:
       - run: g++ prompt.c -lcrypt -lcs50 -lm -o prompt
       - run: ./prompt
         stdin: -1
-        stdout: Error no such month in my calendar
+        stdout: Error: no such month in my calendar
         exit: 0
