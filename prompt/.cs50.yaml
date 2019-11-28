@@ -26,16 +26,16 @@ submit50:
         stdin: 12
         stdout: December
         exit: 0
-    -1 outputs Error: no such month in my calendar:
+    -1 outputs Error: no such month in my calendar
       - run: g++ prompt.c -lcrypt -lcs50 -lm -o prompt
       - run: ./prompt
         stdin: -1
-        stdout: Error: no such month in my calendar
+        stdout: Error no such month in my calendar
         exit: 0
-     13 outputs Error: no such month in my calendar:
+     13 outputs Error: no such month in my calendar
       - run: g++ prompt.c -lcrypt -lcs50 -lm -o prompt
       - run: ./prompt
         stdin: -1
-        stdout: Error: no such month in my calendar
+        stdout: Error no such month in my calendar
         exit: 0
         
