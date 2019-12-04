@@ -14,7 +14,7 @@ def compiles():
 @check50.check(compiles)
 def test1():
     """ 1 outputs January"""
-    check50.run("./month").stdin("1").stdout("January").exit(0)
+    check50.run("./month").stdin("1", prompt = False).stdout("January").exit(0)
 
 @check50.check(compiles)
 def test2():
